@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #e3e3e3;
+}
+
+section {
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+header {
+    text-align: left;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-left: 0;
+    background-color: #333;
+}
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+.watched {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.watched span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.watched p i {
+    margin-left: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+.watched p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.view-activity {
+    font-size: 0.85em;
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.view-activity:hover {
+    text-decoration: underline;
+}
+
+.tab {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.tab a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size:20px;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 6px;
+}
+
+.tabs a.active {
+    border-bottom: 5px solid white;
+}
+
+.tabs a:hover,
+.tabs a:focus {
+    border-bottom: 5px solid white;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.filter-labels {
+    display: flex;
+    gap: 120px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px; }
+
+.sort-filter {
+    flex: 1;
+    min-width: 100px;
+    max-width: 160px;
+    padding-right: 10px;
+}
+
+.filter-category,
+.filter-progress,
+.filter-instructor,
+.filter-reset {
+    flex: 1;
+    min-width: 80px;
+    max-width: 110px;
+    padding-right: 10px;
+}
+
+.filters button {
+    background-color: #f5f5f5;
+    color: Grey;
+    text-align: left;
+    padding: 8px 10px;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-search {
+    flex: 1;
+    min-width: 100px;
+}
+
+.filters select,
+.filters input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.filter-search {
+    position: relative;
+    width: 400px;
+}
+.filter-search-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+}
+.sort-filter select:hover,
+.filter-category select:hover,
+.filter-progress select:hover,
+.filter-instructor select:hover,
+.filter-reset button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.sort-filter select,
+.filter-category select,
+.filter-progress select,
+.filter-instructor select,
+.filter-reset button {
+    min-width: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.search-bar:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.search-icon:hover {
+    background-color: #333;
+}
+.filter-reset button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.filter-reset button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.search-bar {
+    width: 100%;
+    padding: 8px 40px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.filter-search-wrapper {
+    width: 250px;
+}
+.filter-search {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 40px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.search-icon {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    display: flex;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+}
+.course-list {
+    display: flex;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(
+            25% - 15px
+    );
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.rating-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.course-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.course-progress {
+    background-color: #093f7a;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.7s;
+}
+
+.rating-status {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+
+}
+
+.completion-status {
+    margin: 0;
+    flex: 1 0 auto;
+}
+
+.stars {
+    margin-left: auto;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+}
+
+.rating-container p {
+    margin-top: 7px;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 11px;
+    text-align: right;
+}
+.watch-time i {
+    font-size: 1em;
+    margin-left: 5px;
+    color: #007bff;
+}
+.learning-paths {
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.learning-path-card {
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0;
+    border: 1px solid #ddd;
+}

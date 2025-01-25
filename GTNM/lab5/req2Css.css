@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #e3e3e3;
+}
+
+section {
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+header {
+    text-align: left;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-left: 0;
+    background-color: #333;
+}
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+.watched {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.watched span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.watched p i {
+    margin-left: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+.watched p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.view-activity {
+    font-size: 0.85em;
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.view-activity:hover {
+    text-decoration: underline;
+}
+
+.tab {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.tab a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size:20px;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 6px;
+}
+
+.tabs a.active {
+    border-bottom: 5px solid white;
+}
+
+.tabs a:hover,
+.tabs a:focus {
+    border-bottom: 5px solid white;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-right: 10px;
+}
+.progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5em;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background-color: #4caf50;
+}
